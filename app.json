@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Bill Maker",
+    "slug": "bill-maker-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.billmaker.simple"
+    },
+    "android": {
+      "package": "com.billmaker.simple"
+    },
+    "plugins": [
+      "expo-print"
+    ]
+  }
+}
