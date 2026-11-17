@@ -1,0 +1,25 @@
+MY BILL MAKER — BILL DATE + PAYMENT RECEIPT DATE UPDATE
+
+This update adds:
+1. Bill Date printed on the receipt, even when there are no new items.
+2. Payment Receipt Date field directly on the bill-making screen.
+3. Payment Receipt Date printed on the receipt when entered.
+4. A PAYMENT RECEIPT heading when the bill contains only Previous Balance / Payment Received.
+5. Payment date saved with the bill and restored when editing a saved bill.
+
+INSTALL ON GITHUB (phone or computer)
+1. Download and unzip this update.
+2. In your GitHub repository gkw2whpstv-cmyk/bill-maker, upload bill-dates.js to the repository root.
+3. Open index.html, tap Edit (pencil), and find the closing </body> tag near the very end.
+4. Immediately BEFORE </body>, add this exact line:
+   <script src="./bill-dates.js"></script>
+5. Commit the change.
+6. Upload the included sw.js to the repository root and replace the old sw.js. Commit it.
+7. Open the app and refresh it. If the old version remains, close the tab and reopen it once so the new service-worker cache can load.
+
+IMPORTANT
+- This is an add-on update, not a complete replacement index.html.
+- Do not delete or replace your existing index.html.
+- Existing saved bills are kept in the same browser storage.
+- The Payment Receipt Date is optional. If left blank, the bill date remains the reference date.
+- The app stores bills on the device/browser; this update does not add cloud sync.
